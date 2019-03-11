@@ -1,12 +1,8 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-
-Vue.config.productionTip = false
-
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+import { Vue } from 'admincraft'
+import showCase from './module'
+// 初始化模块
+showCase(Vue)
+// 挂载Vue实例
+// let appElement = document.createElement('div')
+// document.body.appendChild(appElement)
+// admincraft.$mount(appElement)
