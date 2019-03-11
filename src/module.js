@@ -12,8 +12,6 @@ export default (Vue) => {
   Vue.prototype.$addStore(moduleName, storeModule, () => {
     // console.log('状态注册完成')
   })
-  // 通过路由构造对象来注册
-  Vue.prototype.$addMenus(routes)
 
   console.log(
     `%c${moduleName}模块加载完成`,
