@@ -2,13 +2,13 @@
   <div class="eventShowCase">
     <div class="case">
       <div class="title">事件发送（同步）</div>
-      <div class="desc">点击按钮触发一个实时事件, 发送一个字符串: 'AAAAA'</div>
+      <div class="desc">点击按钮触发一个实时事件, 发送一个字符串: '同步事件'</div>
       <span class="btn"
             @click="emitEventSync">发送</span>
     </div>
     <div class="case">
       <div class="title">事件发送（异步）</div>
-      <div class="desc">点击按钮触发一个延迟2秒事件</div>
+      <div class="desc">点击按钮触发一个延迟2秒事件, 发送一个字符串: '异步事件'</div>
       <span class="btn"
             @click="emitEvent">发送</span>
     </div>
@@ -38,14 +38,14 @@ export default {
     emitEventSync() {
       this.$eventBus.emit(
         'showCase/event/demo1',
-        'AAAAA'
+        '同步'
       )
     },
     emitEvent() {
       setTimeout(() => {
         this.$eventBus.emit(
-          'showCase/event/message',
-          '这是一条来自于showCase/event演示的事件'
+          'showCase/event/demo2',
+          '异步'
         )
       }, 2000)
     }

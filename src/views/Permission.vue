@@ -1,25 +1,34 @@
 <template>
-  <div class="showcaseMenu">
+  <div class="showcasePer">
     <div class="case">
-      <div class="title">访问一个不存在的页面</div>
-      <div class="desc">点击按钮会被强制导航到404错误页面。</div>
+      <div class="title">权限控制</div>
+      <div class="desc">点击按钮添加列表项
+        <ul>
+          <li v-for="(item, index) in list"
+              :key="index">{{item+ index}}</li>
+        </ul>
+      </div>
       <span class="btn"
-            @click="router">访问</span>
+            v-permission="'showcase_add'"
+            @click="add">添加</span>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'showcaseError',
+  name: 'showcasePer',
+  data: () => ({
+    list: []
+  }),
   methods: {
-    router() {
-      this.$router.push({name: 'pageNotFound'})
+    add() {
+      this.list.push('新数据')
     }
   }
 }
 </script>
 <style lang="stylus">
-.showcaseMenu
+.showcasePer
   display flex
 
   .case

@@ -68,9 +68,30 @@ export default [
         path: 'error',
         name: 'showcaseError',
         component: () =>
-          import(/* webpackChunkName: "menu" */ '../views/Error.vue'),
+          import(/* webpackChunkName: "error" */ '../views/Error.vue'),
         meta: {
           title: '错误页面',
+          icon: 'setting',
+          permissionTag: 'showcase_error'
+        }
+      },
+      {
+        path: 'permission',
+        name: 'showcasePer',
+        component: () =>
+          import(/* webpackChunkName: "permission" */ '../views/Permission.vue'),
+        meta: {
+          title: '权限控制',
+          icon: 'setting'
+        }
+      },
+      {
+        path: 'dependence',
+        name: 'showcaseDep',
+        component: () =>
+          import(/* webpackChunkName: "dependence" */ '../views/Dependence.vue'),
+        meta: {
+          title: '使用其他依赖',
           icon: 'setting'
         }
       }

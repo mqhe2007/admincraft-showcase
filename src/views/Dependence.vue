@@ -1,25 +1,26 @@
 <template>
-  <div class="showcaseMenu">
+  <div class="showcaseDep">
     <div class="case">
-      <div class="title">访问一个不存在的页面</div>
-      <div class="desc">点击按钮会被强制导航到404错误页面。</div>
+      <div class="title">使用jQuery</div>
+      <div class="desc">点击按钮，使用jquery的hide() API隐藏这段文字</div>
       <span class="btn"
-            @click="router">访问</span>
+            @click="hide">隐藏</span>
     </div>
   </div>
 </template>
 <script>
+import $ from 'jquery'
 export default {
-  name: 'showcaseError',
+  name: 'showcaseDep',
   methods: {
-    router() {
-      this.$router.push({name: 'pageNotFound'})
+    hide() {
+      $('.desc').fadeToggle()
     }
   }
 }
 </script>
 <style lang="stylus">
-.showcaseMenu
+.showcaseDep
   display flex
 
   .case

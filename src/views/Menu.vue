@@ -1,10 +1,16 @@
 <template>
   <div class="showcaseMenu">
     <div class="case">
-      <div class="title">生成一个菜单</div>
-      <div class="desc">点击按钮，在主菜单生成一个菜单项。</div>
+      <div class="title">添加一个外链菜单项</div>
+      <div class="desc">点击按钮，在主菜单生成一个外链菜单。</div>
       <span class="btn"
-            @click="addMenu">插入</span>
+            @click="addMenu">添加</span>
+    </div>
+    <div class="case">
+      <div class="title">添加一组外链菜单项</div>
+      <div class="desc">点击按钮，在主菜单生成一组外链菜单。</div>
+      <span class="btn"
+            @click="addMenuGroup">添加</span>
     </div>
   </div>
 </template>
@@ -17,11 +23,40 @@ export default {
       this.$addMenus([
         {
           index: 3,
-          children: [],
-          name: 'guanwang',
-          title: '外站连接',
+          title: '百度搜索',
+          name: 'baidu',
           url: 'http://www.baidu.com', // 站外url
-          icon: 'setting'
+          icon: 'setting',
+          children: []
+        }
+      ])
+    },
+    addMenuGroup() {
+      // 通过菜单构造对象来注册
+      this.$addMenus([
+        {
+          index: 4,
+          title: '导航工具',
+          name: 'daohang',
+          icon: 'setting',
+          children: [
+            {
+              index: 0,
+              title: 'iconfont',
+              name: 'iconfont',
+              url: 'https://www.iconfont.cn/', // 站外url
+              icon: 'setting',
+              children: []
+            },
+            {
+              index: 0,
+              title: '每日灵感',
+              name: 'meirilinggan',
+              url: 'https://uiiiuiii.com/inspiration', // 站外url
+              icon: 'setting',
+              children: []
+            }
+          ]
         }
       ])
     }

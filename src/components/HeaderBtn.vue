@@ -1,17 +1,23 @@
 <template>
-  <div @click="alert">
-    弹个框
+  <div @click="notice">
+    演示
   </div>
 </template>
 <script>
 export default {
   name: 'haderBtn',
   destroyed() {
-    console.log('我被销毁了')
+    this.$Notice.open({
+      title: '演示按钮被销毁了',
+      content: '演示按钮被销毁后发送了一条消息。'
+    })
   },
   methods: {
-    alert(){
-      alert('您让浏览器弹了个框')
+    notice() {
+      this.$Notice.open({
+        title: '演示按钮被点击了',
+        content: '点击动态添加的演示按钮后发送了一条消息。'
+      })
     }
   }
 }
