@@ -1,0 +1,87 @@
+<template>
+  <div class="showcaseFrame">
+    <div class="case">
+      <div class="title">弹出一个消息提示</div>
+      <div class="desc">点击按钮，调用框架的Notice组件触发一个消息提示。</div>
+      <span class="btn"
+            @click="openNotice">发送</span>
+    </div>
+    <div class="case">
+      <div class="title">弹出一个对话框</div>
+      <div class="desc">点击按钮，调用框架的Dialog组件触发一个对话框。<br /> 编辑内容：{{dialogValue}}</div>
+      <span class="btn"
+            @click="openDialog">发送</span>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: 'showcaseFrame',
+  data() {
+    return {
+      dialogValue: ''
+    }
+  },
+  methods: {
+    openNotice() {
+      this.$Notice.open({
+        title: '弹出了一个消息提示',
+        content: '这是一条来自于showcase模块发送的消息。'
+      })
+    },
+    openDialog() {
+      this.$Dialog.open({
+        title: '编辑：',
+        render: h =>
+          h('div', [
+            h('input', {
+              attrs: {
+                placeholder: '请输入'
+              },
+              domProps: {
+                value: this.dialogValue
+              },
+              on: {
+                input: e => {
+                  this.dialogValue = e.target.value
+                }
+              }
+            })
+          ]),
+        onClosed: () => {
+          this.$Notice.open({
+            title: '一个新的消息',
+            content: '对话框关闭了。'
+          })
+        }
+      })
+    }
+  }
+}
+</script>
+<style lang="stylus">
+.showcaseFrame
+  display flex
+
+  .case
+    flex 0 0 300px
+    height 150px
+    border 1px solid #eee
+    margin-right 10px
+
+    .title
+      width 100%
+      margin 5px
+
+    .desc
+      margin 5px
+
+    .btn
+      padding 5px
+      margin 5px
+      background #ddd
+      cursor pointer
+
+      &:active
+        background #999
+</style>

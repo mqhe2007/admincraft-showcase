@@ -2,10 +2,10 @@ import routes from './router/routes'
 import storeModule from './store/storeModule'
 let moduleName = require('../package.json').name
 
-export default (Vue) => {
+export default (Vue, router) => {
   // 注册路由
   Vue.prototype.$addRoutes(routes, () => {
-    // console.log('路由注册完成', route)
+    router.push(location.hash.replace('#', ''))
   })
 
   // 注册状态树

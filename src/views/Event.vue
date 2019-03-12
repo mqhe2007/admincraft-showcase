@@ -2,7 +2,7 @@
   <div class="eventShowCase">
     <div class="case">
       <div class="title">事件发送（同步）</div>
-      <div class="desc">点击按钮触发一个实时事件</div>
+      <div class="desc">点击按钮触发一个实时事件, 发送一个字符串: 'AAAAA'</div>
       <span class="btn"
             @click="emitEventSync">发送</span>
     </div>
@@ -37,8 +37,8 @@ export default {
   methods: {
     emitEventSync() {
       this.$eventBus.emit(
-        'showCase/event/message',
-        '这是一条来自于showCase/event演示的事件'
+        'showCase/event/demo1',
+        'AAAAA'
       )
     },
     emitEvent() {
@@ -47,10 +47,6 @@ export default {
           'showCase/event/message',
           '这是一条来自于showCase/event演示的事件'
         )
-        this.$Notice.open({
-          title: '直接调用提醒',
-          content: '这是一条来自于showCase/event演示的事件'
-        })
       }, 2000)
     }
   }

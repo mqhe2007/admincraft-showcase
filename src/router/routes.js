@@ -14,8 +14,18 @@ export default [
     },
     children: [
       {
+        path: 'frame',
+        name: 'showcaseFrame',
+        component: () =>
+          import(/* webpackChunkName: "frame" */ '../views/Frame.vue'),
+        meta: {
+          title: '全局调用',
+          icon: 'setting'
+        }
+      },
+      {
         path: 'event',
-        name: 'event',
+        name: 'showcaseEvent',
         component: () =>
           import(/* webpackChunkName: "event" */ '../views/Event.vue'),
         meta: {
@@ -25,7 +35,7 @@ export default [
       },
       {
         path: 'component',
-        name: 'component',
+        name: 'showcaseComponent',
         component: () =>
           import(/* webpackChunkName: "component" */ '../views/Component.vue'),
         meta: {
@@ -35,7 +45,7 @@ export default [
       },
       {
         path: 'help',
-        name: 'help',
+        name: 'showcaseHelp',
         component: () =>
           import(/* webpackChunkName: "help" */ '../views/Help.vue'),
         meta: {
@@ -46,7 +56,7 @@ export default [
       },
       {
         path: 'menu',
-        name: 'menu',
+        name: 'showcaseMenu',
         component: () =>
           import(/* webpackChunkName: "menu" */ '../views/Menu.vue'),
         meta: {
