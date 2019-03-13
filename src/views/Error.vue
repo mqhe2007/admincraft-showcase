@@ -13,7 +13,7 @@ export default {
   name: 'showcaseError',
   methods: {
     router() {
-      this.$router.push({name: 'pageNotFound'})
+      this.$router.push({name: 'error404'})
     }
   }
 }

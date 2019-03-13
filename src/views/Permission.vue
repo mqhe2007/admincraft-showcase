@@ -1,8 +1,16 @@
 <template>
   <div class="showcasePer">
     <div class="case">
-      <div class="title">权限控制</div>
-      <div class="desc">点击按钮添加列表项
+      <div class="title">动态修改权限</div>
+      <div class="desc">给当前用户添加权限标签
+        <input type="text" v-model="permissionTag" placeholder="输入预设权限标签">
+      </div>
+      <span class="btn"
+            @click="addPermissionTag">添加</span>
+    </div>
+    <div class="case">
+      <div class="title">演示</div>
+      <div class="desc">点击按钮添加列表项（需要权限：showcase_add）
         <ul>
           <li v-for="(item, index) in list"
               :key="index">{{item+ index}}</li>
@@ -18,11 +26,21 @@
 export default {
   name: 'showcasePer',
   data: () => ({
-    list: []
+    list: [],
+    permissionTag: ''
   }),
+  watch: {
+    '$store.state.user.permissions'(n) {
+      console.log(n)
+      this.$forceUpdate()
+    }
+  },
   methods: {
     add() {
       this.list.push('新数据')
+    },
+    addPermissionTag() {
+      this.$store.commit('user/addUserPermissionTag', this.permissionTag)
     }
   }
 }

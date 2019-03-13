@@ -32,10 +32,10 @@ export default {
   },
   methods: {
     createHeaderBtn() {
-      this.$addComponent('headerRightMenus', 'yanshi', HeaderBtn)
+      this.$component.create('headerRightMenus', 'yanshi', HeaderBtn)
     },
     destroyHeaderBtn() {
-      this.$destroyComponent('headerRightMenus', 'yanshi')
+      this.$component.destroy('headerRightMenus', 'yanshi')
     }
   }
 }

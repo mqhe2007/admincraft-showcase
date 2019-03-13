@@ -1,15 +1,15 @@
-const path = require('path')
+// const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
-const plugins = require('./config/plugins')
-function mapPluginLibAssets() {
-  let assets = []
-  for (let value of plugins) {
-    assets.push(`plugins/${value}`)
-  }
-  console.log(assets)
-  return assets
-}
+// const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
+// const plugins = require('./config/plugins')
+// function mapPluginLibAssets() {
+//   let assets = []
+//   for (let value of plugins) {
+//     assets.push(`plugins/${value}`)
+//   }
+//   console.log(assets)
+//   return assets
+// }
 module.exports = {
   publicPath: './',
   productionSourceMap: false,
@@ -34,12 +34,12 @@ module.exports = {
           from: 'public'
         }
       ]),
-      new HtmlWebpackIncludeAssetsPlugin({
-        assets: mapPluginLibAssets(),
-        publicPath:
-          process.env.NODE_ENV === 'production' ? '/' : '//localhost:8080/',
-        append: false
-      })
+      // new HtmlWebpackIncludeAssetsPlugin({
+      //   assets: mapPluginLibAssets(),
+      //   publicPath:
+      //     process.env.NODE_ENV === 'production' ? '/' : '//localhost:8080/',
+      //   append: false
+      // })
     ]
   }
 }

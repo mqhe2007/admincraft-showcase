@@ -8,10 +8,7 @@
 let moduleName = require('../package.json').name
 export default {
   name: moduleName,
-  methods: {
-  },
-  created() {
-  }
+  methods: {}
 }
 </script>
 
