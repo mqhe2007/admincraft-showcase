@@ -1,20 +1,14 @@
 <template>
   <div class="eventShowCase">
     <div class="case">
-      <div class="title">事件发送（同步）</div>
-      <div class="desc">点击按钮触发一个实时事件, 发送一个字符串: '同步事件'</div>
+      <div class="title">事件发送</div>
+      <div class="desc">点击按钮触发一个事件, 并且在头部监听这个事件，事件触发时，头部会发送一条消息。</div>
       <span class="btn"
             @click="emitEventSync">发送</span>
     </div>
     <div class="case">
-      <div class="title">事件发送（异步）</div>
-      <div class="desc">点击按钮触发一个延迟2秒事件, 发送一个字符串: '异步事件'</div>
-      <span class="btn"
-            @click="emitEvent">发送</span>
-    </div>
-    <div class="case">
       <div class="title">事件监听</div>
-      <div class="desc">监听消息中心清除全部消息事件，并触发回调。</div>
+      <div class="desc">监听消息中心清除全部消息事件，并更新结果。</div>
       <p>结果：{{eventOnCallback}}</p>
     </div>
   </div>
@@ -38,16 +32,8 @@ export default {
     emitEventSync() {
       this.$eventBus.emit(
         'showCase/event/demo1',
-        '同步'
+        'showcase发送了一个事件，事件名：showCase/event/demo1'
       )
-    },
-    emitEvent() {
-      setTimeout(() => {
-        this.$eventBus.emit(
-          'showCase/event/demo2',
-          '异步'
-        )
-      }, 2000)
     }
   }
 }

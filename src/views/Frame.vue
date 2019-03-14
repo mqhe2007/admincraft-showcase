@@ -8,7 +8,7 @@
     </div>
     <div class="case">
       <div class="title">弹出一个对话框</div>
-      <div class="desc">点击按钮，调用框架的Dialog组件触发一个对话框。<br /> 编辑内容：{{dialogValue}}</div>
+      <div class="desc">点击按钮，调用框架的Dialog组件触发一个对话框。<br /> 通过rander函数可以渲染任何内容。比如表单：{{dialogValue}}。并且在对话框的关闭回调中做些什么，比如弹出一条消息。</div>
       <span class="btn"
             @click="openDialog">发送</span>
     </div>
@@ -51,7 +51,7 @@ export default {
         onClosed: () => {
           this.$Notice.open({
             title: '一个新的消息',
-            content: '对话框关闭了。'
+            content: '对话框关闭了,刚才输入的内容是：' + this.dialogValue
           })
         }
       })
@@ -65,7 +65,6 @@ export default {
 
   .case
     flex 0 0 300px
-    height 150px
     border 1px solid #eee
     margin-right 10px
 
