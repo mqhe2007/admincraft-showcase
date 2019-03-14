@@ -1,4 +1,4 @@
-import { Admincraft } from 'admincraft'
+import Admincraft from 'admincraft'
 import showCase from './module'
 // 创建挂载点
 let appElement = document.createElement('div')
