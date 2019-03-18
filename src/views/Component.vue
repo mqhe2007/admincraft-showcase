@@ -5,12 +5,22 @@
       <div class="desc">点击按钮，在头部工具栏插入一个演示按钮</div>
       <span class="btn"
             @click="createHeaderBtn">插入</span>
+      <pre>
+          <code class="language-js">
+this.$component.create('headerRightMenus', 'yanshi', HeaderBtn)
+        </code>
+        </pre>
     </div>
     <div class="case">
       <div class="title">卸载组件</div>
       <div class="desc">点击按钮，把插入头部工具栏的演示组件销毁</div>
       <span class="btn"
             @click="destroyHeaderBtn">销毁</span>
+      <pre>
+          <code class="language-js">
+this.$component.destroy('headerRightMenus', 'yanshi')
+        </code>
+        </pre>
     </div>
   </div>
 </template>
@@ -30,6 +40,9 @@ export default {
       this.eventOnCallback = '消息中心已清空'
     })
   },
+  mounted() {
+    Prism.highlightAll()
+  },
   methods: {
     createHeaderBtn() {
       this.$component.create('headerRightMenus', 'yanshi', HeaderBtn)
@@ -43,16 +56,18 @@ export default {
 <style lang="stylus">
 .eventShowCase
   display flex
+  flex-flow column
 
   .case
     flex 0 0 300px
     height 150px
-    border 1px solid #eee
     margin-right 10px
 
     .title
       width 100%
       margin 5px
+      font-size 25px
+      font-weight bold
 
     .desc
       margin 5px

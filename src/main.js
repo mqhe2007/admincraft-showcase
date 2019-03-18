@@ -1,9 +1,12 @@
-import {Vue, Admincraft} from 'admincraft'
+import { Admincraft } from 'admincraft'
 import showCase from './module'
-console.log(Vue, Admincraft)
 // 创建挂载点
 let appElement = document.createElement('div')
-let admincraft = new Admincraft({ modules: [showCase] })
-admincraft.$mount(appElement)
-document.body.appendChild(admincraft.$el)
-admincraft.$router.push('/')
+let app = new Admincraft({
+  modules: [showCase],
+  title: 'Showcase',
+  logo: { text: 'showcase演示' }
+})
+app.$mount(appElement)
+document.body.appendChild(app.$el)
+app.$router.push(location.hash.replace('#', ''))

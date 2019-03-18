@@ -1,11 +1,11 @@
-import ModuleHome from '../ModuleHome'
+import App from '../App'
 let moduleName = require('../../package.json').name
 export default [
   {
     // 模块主路由通过工程信息自动配置，无需手动更改
     path: '/' + moduleName,
     name: moduleName,
-    component: ModuleHome,
+    component: App,
     // 路由元数据，包含路由扩展配置信息
     meta: {
       index: 0,

@@ -3,22 +3,30 @@
     <div class="case">
       <div class="title">动态修改权限</div>
       <div class="desc">给当前用户添加权限标签
-        <input type="text" v-model="permissionTag" placeholder="输入预设权限标签">
+        <input type="text"
+               v-model="permissionTag"
+               placeholder="输入预设权限标签">
       </div>
       <span class="btn"
             @click="addPermissionTag">添加</span>
+      <pre>
+          <code class="language-js">
+this.$store.commit('user/addUserPermissionTag', 'showcase_add')
+        </code>
+        </pre>
     </div>
     <div class="case">
       <div class="title">演示</div>
       <div class="desc">点击按钮添加列表项（需要权限：showcase_add）
+        <span class="btn"
+              v-permission="'showcase_add'"
+              @click="add">添加</span>
         <ul>
           <li v-for="(item, index) in list"
               :key="index">{{item+ index}}</li>
         </ul>
       </div>
-      <span class="btn"
-            v-permission="'showcase_add'"
-            @click="add">添加</span>
+
     </div>
   </div>
 </template>
@@ -35,6 +43,9 @@ export default {
       this.$forceUpdate()
     }
   },
+  mounted() {
+    Prism.highlightAll()
+  },
   methods: {
     add() {
       this.list.push('新数据')
@@ -48,16 +59,17 @@ export default {
 <style lang="stylus">
 .showcasePer
   display flex
+  flex-flow column
 
   .case
     flex 0 0 300px
-    height 150px
-    border 1px solid #eee
     margin-right 10px
 
     .title
       width 100%
       margin 5px
+      font-size 25px
+      font-weight bold
 
     .desc
       margin 5px

@@ -1,22 +1,85 @@
 <template>
   <div class="showcaseMenu">
     <div class="case">
-      <div class="title">添加一个外链菜单项</div>
-      <div class="desc">点击按钮，在主菜单生成一个外链菜单。</div>
-      <span class="btn"
-            @click="addMenu">添加</span>
+      <div class="title">通过路由定义生成菜单</div>
+      <div class="desc">应用实例化时或运行中使用添加菜单方法，传入路由定义可以根据路由生成菜单。</div>
+      <pre>
+          <code class="language-js">
+// 导入路由定义的数组
+import routes from './router/routes'
+
+// 模块安装时使用路由定义注册菜单
+Vue.prototype.$addRoutes(routes, () => {})
+
+// 运行时组件内使用路由定义注册菜单
+this.$addRoutes(routes, () => {})
+        </code>
+        </pre>
     </div>
     <div class="case">
-      <div class="title">添加一组外链菜单项</div>
+      <div class="title">添加一个菜单项</div>
+      <div class="desc">点击按钮，在主菜单生成一个菜单。</div>
+      <span class="btn"
+            @click="addMenu">添加</span>
+      <pre>
+          <code class="language-js">
+this.$addMenus([
+  {
+    index: 3,
+    title: '百度搜索',
+    name: 'baidu',
+    url: 'http://www.baidu.com',
+    icon: 'setting',
+    children: []
+  }
+])
+        </code>
+        </pre>
+    </div>
+    <div class="case">
+      <div class="title">添加一组菜单项</div>
       <div class="desc">点击按钮，在主菜单生成一组外链菜单。</div>
       <span class="btn"
             @click="addMenuGroup">添加</span>
+      <pre>
+          <code class="language-js">
+this.$addMenus([
+  {
+    index: 4,
+    title: '导航工具',
+    name: 'daohang',
+    icon: 'setting',
+    children: [
+      {
+        index: 0,
+        title: 'iconfont',
+        name: 'iconfont',
+        url: 'https://www.iconfont.cn/', // 站外url
+        icon: 'setting',
+        children: []
+      },
+      {
+        index: 0,
+        title: '每日灵感',
+        name: 'meirilinggan',
+        url: 'https://uiiiuiii.com/inspiration', // 站外url
+        icon: 'setting',
+        children: []
+      }
+    ]
+  }
+])
+        </code>
+        </pre>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: 'showcaseMenu',
+  mounted() {
+    Prism.highlightAll()
+  },
   methods: {
     addMenu() {
       // 通过菜单构造对象来注册
@@ -66,16 +129,17 @@ export default {
 <style lang="stylus">
 .showcaseMenu
   display flex
+  flex-flow column
 
   .case
     flex 0 0 300px
-    height 150px
-    border 1px solid #eee
     margin-right 10px
 
     .title
       width 100%
       margin 5px
+      font-size 25px
+      font-weight bold
 
     .desc
       margin 5px

@@ -5,15 +5,23 @@
       <div class="desc">点击按钮会被强制导航到404错误页面。</div>
       <span class="btn"
             @click="router">访问</span>
+      <pre>
+          <code class="language-js">
+this.$router.push({name: 'error404'})
+        </code>
+        </pre>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: 'showcaseError',
+  mounted() {
+    Prism.highlightAll()
+  },
   methods: {
     router() {
-      this.$router.push({name: 'error404'})
+      this.$router.push({ name: 'error404' })
     }
   }
 }
@@ -21,16 +29,18 @@ export default {
 <style lang="stylus">
 .showcaseMenu
   display flex
+  flex-flow column
 
   .case
     flex 0 0 300px
     height 150px
-    border 1px solid #eee
     margin-right 10px
 
     .title
       width 100%
       margin 5px
+      font-size 25px
+      font-weight bold
 
     .desc
       margin 5px

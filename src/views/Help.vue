@@ -11,6 +11,22 @@
       </ul>
     </div>
     <div class="content">
+      <pre>
+          <code class="language-js">
+// 路由定义
+{
+  path: 'help',
+  name: 'showcaseHelp',
+  component: () =>
+    import(/* webpackChunkName: "help" */ '../views/Help.vue'),
+  meta: {
+    title: '切换布局',
+    layout: 'blank', // 毛坯布局
+    icon: 'setting'
+  }
+}
+      </code>
+        </pre>
       <div v-if="show">
         <h2><a href="#Cookbook-vs-指南"
              class="headerlink"
@@ -112,6 +128,9 @@ export default {
   data: () => ({
     show: true
   }),
+  mounted() {
+    Prism.highlightAll()
+  },
   methods: {
     toggle(value) {
       this.show = value
@@ -132,8 +151,10 @@ export default {
     text-align center
     background #333
     color #fff
+
     li
       cursor pointer
+
   .content
     flex auto
     padding 15px 30px
