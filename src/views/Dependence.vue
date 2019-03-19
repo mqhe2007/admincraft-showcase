@@ -2,7 +2,7 @@
   <div class="showcaseDep">
     <div class="case">
       <div class="title">安装导入使用(推荐)</div>
-      <div class="desc">点击按钮，使用jquery的hide() API隐藏这段文字</div>
+      <div class="desc">点击按钮，使用jquery的hide() API隐藏描述文字</div>
       <span class="btn"
             @click="hide">隐藏</span>
       <pre>
@@ -16,7 +16,7 @@ $('.desc').fadeToggle()
     </div>
     <div class="case">
       <div class="title">本地库script标签引用</div>
-      <div class="desc">如果不想使用npm安装，有本地部署需求，可以手动指定本地库文件列表引用。</div>
+      <div class="desc">代码高亮库。</div>
       <pre>
           <code class="language-js">
 // 本地库存放位置 /public/libs/*
