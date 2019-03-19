@@ -1,7 +1,7 @@
 <template>
   <div class="showcaseHelp">
     <div class="sidebar">
-      <h2 @click="goback">返回</h2>
+      <h2 @click="goback">返回首页</h2>
       <h2>帮助中心</h2>
       <input type="text"
              placeholder="搜索">
@@ -136,7 +136,7 @@ export default {
       this.show = value
     },
     goback() {
-      this.$router.go(-1)
+      this.$router.push('/')
     }
   }
 }

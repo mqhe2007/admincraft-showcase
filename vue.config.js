@@ -9,6 +9,7 @@ function mapPluginLibAssets() {
   }
   return assets
 }
+console.log(process.env.VUE_APP_ENV)
 module.exports = {
   publicPath: './',
   productionSourceMap: false,

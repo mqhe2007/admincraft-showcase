@@ -1150,10 +1150,10 @@ address@^1.0.3:
   resolved "http://172.18.238.201:8081/repository/npm-public/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
-admincraft@^0.0.5:
-  version "0.0.5"
-  resolved "http://172.18.238.201:8081/repository/npm-public/admincraft/-/admincraft-0.0.5.tgz#0221ee1f867aa1c423405c45db3718f5faf93d7d"
-  integrity sha512-C0y3ii3JHj4Zp/lLtC4qrJR4SEJFTONzOqLpy9wfPP0E5TcuHi933CRRGwm9A24Jp1wI7qXhCbMX4sLXec5OZw==
+admincraft@^0.0.7:
+  version "0.0.7"
+  resolved "http://172.18.238.201:8081/repository/npm-public/admincraft/-/admincraft-0.0.7.tgz#c9d91cdab80e6aca016272e03337e385ca231696"
+  integrity sha512-mmbNuAg8PuRXqBZYMBHLvfa/VVYYCAeDq+z0GO/PqYydJ0pwSyLLBx7XnwV48e9xwXO9Mm0B0QSCYx6rKo773w==
   dependencies:
     axios "^0.18.0"
     better-scroll "^1.15.0"

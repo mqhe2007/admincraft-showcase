@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib src/module.js"
+    "build": "vue-cli-service build --target lib src/module.js",
+    "build:test": "vue-cli-service build --mode test --target lib src/module.js"
   },
   "dependencies": {
-    "admincraft": "^0.0.5",
+    "admincraft": "^0.0.7",
     "jquery": "^3.3.1",
     "vue": "^2.6.9"
   },

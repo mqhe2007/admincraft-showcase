@@ -91,7 +91,17 @@ export default [
         component: () =>
           import(/* webpackChunkName: "dependence" */ '../views/Dependence.vue'),
         meta: {
-          title: '使用其他依赖',
+          title: '第三方库',
+          icon: 'setting'
+        }
+      },
+      {
+        path: 'env',
+        name: 'showcaseEnv',
+        component: () =>
+          import(/* webpackChunkName: "dependence" */ '../views/Env.vue'),
+        meta: {
+          title: '配置多环境常量',
           icon: 'setting'
         }
       }
