@@ -1,7 +1,7 @@
-// const path = require('path')
+// vue-cli配置文件
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
-const libs = require('./config/libs')
+const libs = require('./src/config/libs')
 function mapPluginLibAssets() {
   let assets = []
   for (let value of libs) {
@@ -9,7 +9,6 @@ function mapPluginLibAssets() {
   }
   return assets
 }
-console.log(process.env.VUE_APP_ENV)
 module.exports = {
   publicPath: './',
   productionSourceMap: false,

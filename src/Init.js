@@ -1,7 +1,7 @@
 import routes from './router/routes'
 import storeModule from './store/storeModule'
-import CONST from '../config/const'
-import libs from '../config/libs'
+import CONST from './config/const'
+import libs from './config/libs'
 let moduleName = require('../package.json').name
 let i, serverUrl
 if (
@@ -25,11 +25,9 @@ export default Vue => {
 
   // 注册libs
   let linkLibs = libs => libs.map(item => serverUrl + 'libs/' + item)
-
-  Vue.prototype.$addlibs(linkLibs(libs)).then(() => {
-    console.log(
-      `%c${moduleName}模块加载完成`,
-      'background: #4192d9; padding: 5px; color: #fff'
-    )
-  })
+  Vue.prototype.$addlibs(linkLibs(libs)).then(() => {})
+  console.log(
+    `%c${moduleName}模块加载完成`,
+    'background: #4192d9; padding: 5px; color: #fff'
+  )
 }

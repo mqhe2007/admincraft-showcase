@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib src/module.js",
-    "build:test": "vue-cli-service build --mode test --target lib src/module.js"
+    "build": "vue-cli-service build --target lib src/Init.js",
+    "build:test": "vue-cli-service build --mode test --target lib src/Init.js"
   },
   "dependencies": {
-    "admincraft": "^0.0.9",
-    "jquery": "^3.3.1",
-    "vue": "^2.6.9"
+    "admincraft": "^0.1.0-alpha",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
@@ -23,6 +22,7 @@
     "html-webpack-include-assets-plugin": "^1.0.7",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue": "^2.6.9",
     "vue-template-compiler": "^2.6.9"
   }
 }

@@ -1,8 +1,6 @@
-import {Vue, Admincraft } from 'admincraft'
-import showCase from './module'
-import CONST from '../config/const'
-Vue.prototype.$const = CONST
-// 创建挂载点
+import {Admincraft} from 'admincraft'
+import showCase from './Init'
+// 创建实例
 let appElement = document.createElement('div')
 let app = new Admincraft({
   modules: [showCase],
