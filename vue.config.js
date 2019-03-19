@@ -37,8 +37,6 @@ module.exports = {
       ]),
       new HtmlWebpackIncludeAssetsPlugin({
         assets: mapPluginLibAssets(),
-        publicPath:
-          process.env.NODE_ENV === 'production' ? '/' : '//localhost:8080/',
         append: false
       })
     ]
