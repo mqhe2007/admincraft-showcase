@@ -8,7 +8,7 @@
     "build:test": "vue-cli-service build --mode test --target lib src/module.js"
   },
   "dependencies": {
-    "admincraft": "^0.0.7",
+    "admincraft": "^0.0.9",
     "jquery": "^3.3.1",
     "vue": "^2.6.9"
   },
