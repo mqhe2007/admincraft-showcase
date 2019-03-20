@@ -39,6 +39,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "component" */ '../views/Component.vue'),
         meta: {
+          NonMenu: true,
           title: '组件注册',
           icon: 'setting'
         }
