@@ -6,7 +6,7 @@
       </div>
       <pre>
           <code class="language-js">
-// 配置常量 /config/const.js
+// 配置常量 /config/envConst.js
 const list = {
   development: {
     API_BASE: '/api',
@@ -25,7 +25,7 @@ export default (process.env.VUE_APP_ENV
   : list[process.env.NODE_ENV])
 
 // 使用常量
-import CONST from '../config/const'
+import envConst from '../config/envConst'
 Vue.prototype.$const = CONST
 
 console.log(this.$const.API_BASE)

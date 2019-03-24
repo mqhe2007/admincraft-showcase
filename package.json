@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib src/Init.js",
-    "build:test": "vue-cli-service build --mode test --target lib src/Init.js"
+    "build": "vue-cli-service build --target lib src/init.js",
+    "build:test": "vue-cli-service build --mode test --target lib src/init.js"
   },
   "dependencies": {
     "admincraft": "^0.1.0-alpha",

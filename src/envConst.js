@@ -12,7 +12,7 @@ const list = {
   }
 }
 
-let CONST = process.env.VUE_APP_ENV
+let envConst = process.env.VUE_APP_ENV
   ? list[process.env.NODE_ENV][process.env.VUE_APP_ENV]
   : list[process.env.NODE_ENV]
-export default CONST
+export default envConst

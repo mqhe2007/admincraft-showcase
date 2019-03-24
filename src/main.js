@@ -1,5 +1,5 @@
-import {Admincraft} from 'admincraft'
-import showCase from './Init'
+import Admincraft from 'admincraft'
+import showCase from './init'
 // 创建实例
 let appElement = document.createElement('div')
 let app = new Admincraft({

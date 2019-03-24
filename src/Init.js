@@ -1,14 +1,13 @@
 import routes from './router/routes'
 import storeModule from './store/storeModule'
-import CONST from './config/const'
-import libs from './config/libs'
+import libs from './libs'
 let moduleName = require('../package.json').name
-let i, serverUrl
+let i, moduleServerUrl
 if (
   (i = window.document.currentScript) &&
   (i = i.src.match(/(.+\/)[^/]+\.js$/))
 ) {
-  serverUrl = i[1]
+  moduleServerUrl = i[1]
 }
 export default Vue =>
   new Promise((resolve, reject) => {
@@ -28,14 +27,13 @@ export default Vue =>
         name: 'showcaseComponent'
       }
     ])
-    // 注册常量
-    Vue.prototype.$addConst(CONST, () => {})
 
     if (libs.length > 0) {
       // 注册libs
-      let linkLibs = libs => libs.map(item => serverUrl + 'libs/' + item)
+      let getRemoteLibUrlList = libs =>
+        libs.map(item => moduleServerUrl + 'libs/' + item)
       Vue.prototype
-        .$addlibs(linkLibs(libs))
+        .$addRemoteLib(getRemoteLibUrlList(libs))
         .then(() => {
           console.log(
             `%c${moduleName}模块加载完成`,
