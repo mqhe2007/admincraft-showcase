@@ -31,7 +31,7 @@ export default Vue =>
     if (libs.length > 0) {
       // 注册libs
       let getRemoteLibUrlList = libs =>
-        libs.map(item => moduleServerUrl + 'libs/' + item)
+        libs.map(item => moduleServerUrl + item)
       Vue.prototype
         .$addRemoteLib(getRemoteLibUrlList(libs))
         .then(() => {
