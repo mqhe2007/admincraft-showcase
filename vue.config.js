@@ -1,7 +1,7 @@
 // vue-cli配置文件
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
-const libs = require('./src/config/libs')
+const libs = require('./src/libs')
 function mapPluginLibAssets() {
   let assets = []
   for (let value of libs) {

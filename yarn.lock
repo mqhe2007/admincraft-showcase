@@ -1150,13 +1150,14 @@ address@^1.0.3:
   resolved "http://172.18.238.201:8081/repository/npm-public/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
-admincraft@^0.1.0-alpha:
-  version "0.1.0-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.1.0-alpha.tgz#2a3d2f2a58716f4e7b043f94ba116d5d558169c0"
-  integrity sha512-4f1fvZyKsEcJW3ZQM2JgcH6fu7p8QLSzg1p04nU1Nff5KOh4NP4mNVTCQgjj5l9E5FXWNtCaWXEFC4hJIYvRAA==
+admincraft@^0.2.3-alpha:
+  version "0.2.3-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.2.3-alpha.tgz#86482e7f2a09061f3c55ad893e995b8fea4362dd"
+  integrity sha512-gMKlLnts0kHjyN2csMfeAvtmtoF5ZsW0LDzHLjnjrYEkxS52nE1r1NP+rT/KmHD6hYsseP33hyp7RMU4u6OSkg==
   dependencies:
     axios "^0.18.0"
     better-scroll "^1.15.0"
+    localforage "^1.7.3"
     vue "^2.6.9"
     vue-meta "^1.5.8"
     vue-router "^3.0.2"
@@ -4076,6 +4077,11 @@ ignore@^4.0.3, ignore@^4.0.6:
   resolved "http://172.18.238.201:8081/repository/npm-public/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
+immediate@~3.0.5:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
+  integrity sha1-nbHb0Pr43m++D13V5Wu2BigN5ps=
+
 import-cwd@^2.0.0:
   version "2.1.0"
   resolved "http://172.18.238.201:8081/repository/npm-public/import-cwd/-/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
@@ -4708,6 +4714,13 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lie@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/lie/-/lie-3.1.1.tgz#9a436b2cc7746ca59de7a41fa469b3efb76bd87e"
+  integrity sha1-mkNrLMd0bKWd56QfpGmz77dr2H4=
+  dependencies:
+    immediate "~3.0.5"
+
 loader-fs-cache@^1.0.0:
   version "1.0.1"
   resolved "http://172.18.238.201:8081/repository/npm-public/loader-fs-cache/-/loader-fs-cache-1.0.1.tgz#56e0bf08bd9708b26a765b68509840c8dec9fdbc"
@@ -4739,6 +4752,13 @@ loader-utils@^1.0.2, loader-utils@^1.1.0:
     big.js "^5.2.2"
     emojis-list "^2.0.0"
     json5 "^1.0.1"
+
+localforage@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.7.3.tgz#0082b3ca9734679e1bd534995bdd3b24cf10f204"
+  integrity sha512-1TulyYfc4udS7ECSBT2vwJksWbkwwTX8BzeUIiq8Y07Riy7bDAAnxDaPU/tWyOVmQAcWJIEIFP9lPfBGqVoPgQ==
+  dependencies:
+    lie "3.1.1"
 
 locate-path@^2.0.0:
   version "2.0.0"
