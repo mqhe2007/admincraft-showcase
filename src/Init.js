@@ -9,18 +9,18 @@ if (
 ) {
   moduleServerUrl = i[1]
 }
-export default Vue =>
+export default admincraft =>
   new Promise((resolve, reject) => {
     // 注册路由
-    Vue.prototype.$addRoutes(routes, () => {})
+    admincraft.$addRoutes(routes, () => {})
 
     // 注册状态树
-    Vue.prototype.$addStore(moduleName, storeModule, () => {})
+    admincraft.$addStore(moduleName, storeModule, () => {})
 
     // 注册菜单
-    Vue.prototype.$addMenus(routes, () => {})
+    admincraft.$addMenus(routes, () => {})
     // 注册次级菜单
-    Vue.prototype.$addMenus([
+    admincraft.$addMenus([
       {
         parents: 'level1/level2',
         title: '全局菜单注册',
@@ -32,7 +32,7 @@ export default Vue =>
       // 注册libs
       let getRemoteLibUrlList = libs =>
         libs.map(item => moduleServerUrl + item)
-      Vue.prototype
+      admincraft
         .$addRemoteLib(getRemoteLibUrlList(libs))
         .then(() => {
           console.log(
