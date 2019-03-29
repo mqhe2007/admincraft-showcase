@@ -19,19 +19,11 @@ export default admincraft =>
 
     // 注册菜单
     admincraft.$addMenus(routes, () => {})
-    // 注册次级菜单
-    admincraft.$addMenus([
-      {
-        parents: 'level1/level2',
-        title: '全局菜单注册',
-        name: 'showcaseComponent'
-      }
-    ])
 
     if (libs.length > 0) {
+      // console.log(moduleServerUrl,libs)
       // 注册libs
-      let getRemoteLibUrlList = libs =>
-        libs.map(item => moduleServerUrl + item)
+      let getRemoteLibUrlList = libs => libs.map(item => moduleServerUrl + item)
       admincraft
         .$addRemoteLib(getRemoteLibUrlList(libs))
         .then(() => {
