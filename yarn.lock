@@ -1188,21 +1188,21 @@ address@^1.0.3:
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
-admincraft-ui@^0.1.2-alpha:
-  version "0.1.2-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.1.2-alpha.tgz#a03a0b5e14aa66c5c9bfc2f42309aa105ffa42d7"
-  integrity sha512-+T84DA++3ChHnclpfEt++/2hX9nxFEa9uwYaW2YkZS9SaQAgNgy9QrWrJ/j8GcpLoVumBbPlE17ylgNRb+UeqA==
+admincraft-ui@^0.1.4-alpha:
+  version "0.1.4-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.1.4-alpha.tgz#1069ccfe5c42cf1fcc8a367ffe39e7fc8314c3dd"
+  integrity sha512-lb8Gr5TkJ2Y3OkIUuJeS/z4co3rxRD6udm1RB1nJ/cNpkBZ6tfaIENdwQGrgFx7BJWX+XxqXagF/ykQEAGTMrw==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     "@fortawesome/fontawesome-free-solid" "^5.0.13"
     "@fortawesome/fontawesome-svg-core" "^1.2.17"
     "@fortawesome/vue-fontawesome" "^0.1.6"
-    admincraft "^0.5.0-alpha"
+    admincraft "^0.5.3-alpha"
 
-admincraft@^0.5.0-alpha:
-  version "0.5.0-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.0-alpha.tgz#07048272730d0a0f9614ae3812a168a8879f67e7"
-  integrity sha512-2GecDdwCGY6cYXuokk1EHxGPee9njoGOoREm/iEQGdeh6E7zREBSfn7hwGy6b76Gux9CxLUE2sKB06YhRl867g==
+admincraft@^0.5.1-alpha:
+  version "0.5.1-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.1-alpha.tgz#ce231c3364c77560966aff395bf21ef2cf360b12"
+  integrity sha512-hjB9rf41DYWJQj6EZtFb58HHx1ZEV8vomPULSBBN/XZvwx3eU4N7FfvACyG8b8VANEuSbZZSMjAogLiQBFBhbw==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     axios "^0.18.0"
@@ -1212,10 +1212,10 @@ admincraft@^0.5.0-alpha:
     vue-router "^3.0.2"
     vuex "^3.1.0"
 
-admincraft@^0.5.1-alpha:
-  version "0.5.1-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.1-alpha.tgz#ce231c3364c77560966aff395bf21ef2cf360b12"
-  integrity sha512-hjB9rf41DYWJQj6EZtFb58HHx1ZEV8vomPULSBBN/XZvwx3eU4N7FfvACyG8b8VANEuSbZZSMjAogLiQBFBhbw==
+admincraft@^0.5.3-alpha:
+  version "0.5.3-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.3-alpha.tgz#b7eb62f9c3b6d4ae23554c5ebf63718f831445c4"
+  integrity sha512-lBDuKvxklVOwUD7y9f+a/C8VFSLZuvNVXRh4B2uucJKF1MrQs7/WahyT82gwAB6F8n4e8MFhJLjG1jTRh87RHQ==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     axios "^0.18.0"
