@@ -106,7 +106,6 @@ export default {
 
   .case
     flex 0 0 300px
-    height 150px
     margin-right 10px
 
     .title
