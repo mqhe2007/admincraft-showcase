@@ -70,9 +70,11 @@ export default {
   flex-flow column
 
   .case
+    display flex
+    flex-flow column
+    align-items flex-start
     flex 0 0 300px
     margin-right 10px
-
     .title
       width 100%
       margin 5px
