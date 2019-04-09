@@ -50,7 +50,7 @@ export default [
           import(/* webpackChunkName: "help" */ '../views/Help.vue'),
         meta: {
           title: '切换布局',
-          layout: 'blank',
+          layout: 'layoutBlank',
           icon: 'setting'
         }
       },
@@ -62,17 +62,6 @@ export default [
         meta: {
           title: '注册菜单',
           icon: 'setting'
-        }
-      },
-      {
-        path: 'error',
-        name: 'showcaseError',
-        component: () =>
-          import(/* webpackChunkName: "error" */ '../views/Error.vue'),
-        meta: {
-          title: '错误页面',
-          icon: 'setting',
-          permissionTag: 'showcase_error'
         }
       },
       {

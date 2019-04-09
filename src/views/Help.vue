@@ -21,7 +21,7 @@
     import(/* webpackChunkName: "help" */ '../views/Help.vue'),
   meta: {
     title: '切换布局',
-    layout: 'blank', // 毛坯布局
+    layout: 'layoutBlank', // 毛坯布局
     icon: 'setting'
   }
 }

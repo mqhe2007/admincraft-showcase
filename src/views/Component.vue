@@ -7,7 +7,7 @@
             @click="createHeaderBtn">插入</span>
       <pre>
           <code class="language-js">
-this.$component.create('headerRightMenus', 'yanshi', HeaderBtn)
+this.$dynamicComponent.add('HEADER_RIGHT_MENUS', HeaderBtn)
         </code>
         </pre>
     </div>
@@ -18,7 +18,7 @@ this.$component.create('headerRightMenus', 'yanshi', HeaderBtn)
             @click="destroyHeaderBtn">销毁</span>
       <pre>
           <code class="language-js">
-this.$component.destroy('headerRightMenus', 'yanshi')
+this.$dynamicComponent.remove('HEADER_RIGHT_MENUS', 'haderBtn')
         </code>
         </pre>
     </div>
@@ -45,10 +45,10 @@ export default {
   },
   methods: {
     createHeaderBtn() {
-      this.$component.create('headerRightMenus', 'yanshi', HeaderBtn)
+      this.$dynamicComponent.add('HEADER_RIGHT_MENUS', HeaderBtn)
     },
     destroyHeaderBtn() {
-      this.$component.destroy('headerRightMenus', 'yanshi')
+      this.$dynamicComponent.remove('HEADER_RIGHT_MENUS', 'haderBtn')
     }
   }
 }

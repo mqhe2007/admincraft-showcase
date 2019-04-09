@@ -9,7 +9,7 @@
 import routes from './router/routes'
 
 // 模块安装时使用路由定义注册菜单
-Vue.prototype.$addRoutes(routes, () => {})
+app.$addRoutes(routes, () => {})
 
 // 运行时组件内使用路由定义注册菜单
 this.$addRoutes(routes, () => {})

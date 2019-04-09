@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "admincraft": "^0.5.4-alpha",
-    "admincraft-ui": "^0.1.4-alpha",
+    "admincraft-ui": "^0.1.5-alpha",
     "jquery": "^3.3.1"
   },
   "devDependencies": {

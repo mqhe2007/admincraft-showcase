@@ -1188,10 +1188,10 @@ address@^1.0.3:
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
-admincraft-ui@^0.1.4-alpha:
-  version "0.1.4-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.1.4-alpha.tgz#1069ccfe5c42cf1fcc8a367ffe39e7fc8314c3dd"
-  integrity sha512-lb8Gr5TkJ2Y3OkIUuJeS/z4co3rxRD6udm1RB1nJ/cNpkBZ6tfaIENdwQGrgFx7BJWX+XxqXagF/ykQEAGTMrw==
+admincraft-ui@^0.1.5-alpha:
+  version "0.1.5-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.1.5-alpha.tgz#cf0e6edd37f4964869f6f30726c7f193e458bc5d"
+  integrity sha512-0nCPCCR2GKQHJWXcN/4K6uWVZWY9B91llnuvxNqy8QP9I2WINNl3Wmq8EGiugMoHVyclYPKZpGB33iqmoEBajQ==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     "@fortawesome/fontawesome-free-solid" "^5.0.13"
