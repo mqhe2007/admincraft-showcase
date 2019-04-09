@@ -1,8 +1,8 @@
 import Admincraft from 'admincraft'
 import UI from 'admincraft-ui'
-import showCase from './init'
+import moduleInit from './module-init'
 Admincraft.add(UI)
-Admincraft.add(showCase)
+Admincraft.add(moduleInit)
 Admincraft.use(Vue => {
   Vue.config.devtools = true
 })
@@ -14,4 +14,3 @@ let app = new Admincraft({
 })
 app.$mount(appElement)
 document.body.appendChild(app.$el)
-app.$router.push(location.hash.replace('#', ''))
