@@ -9,8 +9,7 @@ export default [
     // 路由元数据，包含路由扩展配置信息
     meta: {
       index: 0,
-      title: '演示模块', // 页面标题，用于显示在浏览器标题
-      icon: 'setting'
+      title: '演示模块' // 页面标题，用于显示在浏览器标题
     },
     children: [
       {
@@ -19,8 +18,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "frame" */ '../views/Frame.vue'),
         meta: {
-          title: '全局调用',
-          icon: 'setting'
+          title: '全局调用'
         }
       },
       {
@@ -29,8 +27,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "event" */ '../views/Event.vue'),
         meta: {
-          title: '事件驱动',
-          icon: 'setting'
+          title: '事件驱动'
         }
       },
       {
@@ -39,8 +36,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "component" */ '../views/Component.vue'),
         meta: {
-          title: '组件注册',
-          icon: 'setting'
+          title: '组件注册'
         }
       },
       {
@@ -50,8 +46,7 @@ export default [
           import(/* webpackChunkName: "help" */ '../views/Help.vue'),
         meta: {
           title: '切换布局',
-          layout: 'layoutBlank',
-          icon: 'setting'
+          layout: 'layoutBlank'
         }
       },
       {
@@ -60,8 +55,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "menu" */ '../views/Menu.vue'),
         meta: {
-          title: '注册菜单',
-          icon: 'setting'
+          title: '注册菜单'
         }
       },
       {
@@ -70,8 +64,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "permission" */ '../views/Permission.vue'),
         meta: {
-          title: '权限控制',
-          icon: 'setting'
+          title: '权限控制'
         }
       },
       {
@@ -80,8 +73,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "dependence" */ '../views/Dependence.vue'),
         meta: {
-          title: '第三方库',
-          icon: 'setting'
+          title: '第三方库'
         }
       },
       {
@@ -90,8 +82,7 @@ export default [
         component: () =>
           import(/* webpackChunkName: "dependence" */ '../views/Env.vue'),
         meta: {
-          title: '配置多环境常量',
-          icon: 'setting'
+          title: '配置多环境常量'
         }
       }
     ]
