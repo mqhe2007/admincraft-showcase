@@ -1,4 +1,12 @@
 import App from '../App'
+import showcaseGlobal from '../views/Global.vue'
+import showcaseEvent from '../views/Event.vue'
+import showcaseComponent from '../views/Component.vue'
+import showcaseHelp from '../views/Help.vue'
+import showcaseMenu from '../views/Menu.vue'
+import showcasePer from '../views/Permission.vue'
+import showcaseDep from '../views/Dependence.vue'
+import showcaseEnv from '../views/Env.vue'
 let moduleName = require('../../package.json').name
 export default [
   {
@@ -14,9 +22,8 @@ export default [
     children: [
       {
         path: 'frame',
-        name: 'showcaseFrame',
-        component: () =>
-          import(/* webpackChunkName: "frame" */ '../views/Frame.vue'),
+        name: 'showcaseGlobal',
+        component: showcaseGlobal,
         meta: {
           title: '全局调用'
         }
@@ -24,8 +31,7 @@ export default [
       {
         path: 'event',
         name: 'showcaseEvent',
-        component: () =>
-          import(/* webpackChunkName: "event" */ '../views/Event.vue'),
+        component: showcaseEvent,
         meta: {
           title: '事件驱动'
         }
@@ -33,8 +39,7 @@ export default [
       {
         path: 'component',
         name: 'showcaseComponent',
-        component: () =>
-          import(/* webpackChunkName: "component" */ '../views/Component.vue'),
+        component: showcaseComponent,
         meta: {
           title: '组件注册'
         }
@@ -42,8 +47,7 @@ export default [
       {
         path: 'help',
         name: 'showcaseHelp',
-        component: () =>
-          import(/* webpackChunkName: "help" */ '../views/Help.vue'),
+        component: showcaseHelp,
         meta: {
           title: '切换布局',
           layout: 'layoutBlank'
@@ -52,8 +56,7 @@ export default [
       {
         path: 'menu',
         name: 'showcaseMenu',
-        component: () =>
-          import(/* webpackChunkName: "menu" */ '../views/Menu.vue'),
+        component: showcaseMenu,
         meta: {
           title: '注册菜单'
         }
@@ -61,8 +64,7 @@ export default [
       {
         path: 'permission',
         name: 'showcasePer',
-        component: () =>
-          import(/* webpackChunkName: "permission" */ '../views/Permission.vue'),
+        component: showcasePer,
         meta: {
           title: '权限控制'
         }
@@ -70,8 +72,7 @@ export default [
       {
         path: 'dependence',
         name: 'showcaseDep',
-        component: () =>
-          import(/* webpackChunkName: "dependence" */ '../views/Dependence.vue'),
+        component: showcaseDep,
         meta: {
           title: '第三方库'
         }
@@ -79,8 +80,7 @@ export default [
       {
         path: 'env',
         name: 'showcaseEnv',
-        component: () =>
-          import(/* webpackChunkName: "dependence" */ '../views/Env.vue'),
+        component: showcaseEnv,
         meta: {
           title: '配置多环境常量'
         }

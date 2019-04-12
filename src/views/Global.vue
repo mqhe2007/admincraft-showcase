@@ -1,5 +1,5 @@
 <template>
-  <div class="showcaseFrame">
+  <div class="showcaseGlobal">
     <div class="case">
       <div class="title">弹出一个消息提示</div>
       <div class="desc">点击按钮，调用框架的Notice组件触发一个消息提示。</div>
@@ -53,7 +53,7 @@ this.$Dialog.open({
 </template>
 <script>
 export default {
-  name: 'showcaseFrame',
+  name: 'showcaseGlobal',
   data() {
     return {
       dialogValue: ''
@@ -100,7 +100,7 @@ export default {
 }
 </script>
 <style lang="stylus">
-.showcaseFrame
+.showcaseGlobal
   display flex
   flex-flow column
 
