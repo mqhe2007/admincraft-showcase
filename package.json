@@ -1,6 +1,6 @@
 {
   "name": "admincraft-showcase",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "private": false,
   "author": "mqhe2007 <122274389@qq.com>",
   "homepage": "https://mengqinghe.com",
@@ -9,7 +9,7 @@
     "build": "vue-cli-service build --target lib src/module-init.js",
     "build:test": "vue-cli-service build --mode test --target lib src/module-init.js"
   },
-  "main": "dist/admincraft-showcase.umd.js",
+  "main": "src/module-init.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
     "jquery": "^3.3.1"
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "public"
   ],
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
