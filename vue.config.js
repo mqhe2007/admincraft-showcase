@@ -1,5 +1,6 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
+  publicPath: './',
   productionSourceMap: false,
   lintOnSave: false,
   css: {

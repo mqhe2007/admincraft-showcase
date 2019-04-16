@@ -1,6 +1,6 @@
 {
   "name": "admincraft-showcase",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "private": false,
   "author": "mqhe2007 <122274389@qq.com>",
   "homepage": "https://mengqinghe.com",
@@ -16,8 +16,6 @@
     "url": "https://github.com/mqhe2007/admincraft-showcase"
   },
   "dependencies": {
-    "admincraft": "^0.5.4-alpha",
-    "admincraft-ui": "^0.1.5-alpha",
     "jquery": "^3.3.1",
     "prismjs": "^1.16.0"
   },
@@ -30,6 +28,8 @@
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
+    "admincraft": "^0.5.7-alpha",
+    "admincraft-ui": "^0.1.13-alpha",
     "babel-eslint": "^10.0.1",
     "copy-webpack-plugin": "^5.0.0",
     "eslint": "^5.8.0",

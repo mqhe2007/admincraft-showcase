@@ -1188,21 +1188,21 @@ address@^1.0.3:
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
-admincraft-ui@^0.1.5-alpha:
-  version "0.1.5-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.1.5-alpha.tgz#cf0e6edd37f4964869f6f30726c7f193e458bc5d"
-  integrity sha512-0nCPCCR2GKQHJWXcN/4K6uWVZWY9B91llnuvxNqy8QP9I2WINNl3Wmq8EGiugMoHVyclYPKZpGB33iqmoEBajQ==
+admincraft-ui@^0.1.13-alpha:
+  version "0.1.13-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.1.13-alpha.tgz#1c28b56470111122df088886e310917408382a60"
+  integrity sha512-xzsI3mctTcqu2COVU1cc2LjcmnK+EYk3JdJcTF7f8UwZcDdId+GMyGZYEVeVrZK3sdaaKEkWVKv1agDEC0RO6A==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     "@fortawesome/fontawesome-free-solid" "^5.0.13"
     "@fortawesome/fontawesome-svg-core" "^1.2.17"
     "@fortawesome/vue-fontawesome" "^0.1.6"
-    admincraft "^0.5.3-alpha"
+    admincraft "^0.5.6-alpha"
 
-admincraft@^0.5.3-alpha:
-  version "0.5.3-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.3-alpha.tgz#b7eb62f9c3b6d4ae23554c5ebf63718f831445c4"
-  integrity sha512-lBDuKvxklVOwUD7y9f+a/C8VFSLZuvNVXRh4B2uucJKF1MrQs7/WahyT82gwAB6F8n4e8MFhJLjG1jTRh87RHQ==
+admincraft@^0.5.6-alpha:
+  version "0.5.6-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.6-alpha.tgz#21c089cf9f6c0faa3ddf56a171aa3b9d178a3e83"
+  integrity sha512-GOpbZBa0gkwP6sXESprUqZFQ/5yPLKacq27bzSNvld+fhPYlcToPsZo2eYUly3YnceNond7UMqMvUFEknYfbyQ==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     axios "^0.18.0"
@@ -1212,10 +1212,10 @@ admincraft@^0.5.3-alpha:
     vue-router "^3.0.2"
     vuex "^3.1.0"
 
-admincraft@^0.5.4-alpha:
-  version "0.5.4-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.4-alpha.tgz#8d2bc827ecf26c4ca7da70ea26ac871cde9072ba"
-  integrity sha512-OxQWl8+MtXbLgJ5eVl5NUbhSXaKM/TlKMOzRw9b6CiSlbRhn7kLgoyv0/ohQzE7hEbn3Hi2x6qRN1ELQzb8PPw==
+admincraft@^0.5.7-alpha:
+  version "0.5.7-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.7-alpha.tgz#9fa73771f25bdab7b421a5855cd498cd4fb9631b"
+  integrity sha512-ebZmjzIJAde28druut5tlMxVe9M/PdJhnXOnKqMlcjK7ULOrMAtrXHZuyULTlkc4jIaYEhqMiOSwGvPnRnKlkw==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     axios "^0.18.0"
@@ -1577,9 +1577,9 @@ bcrypt-pbkdf@^1.0.0:
     tweetnacl "^0.14.3"
 
 better-scroll@^1.15.0:
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/better-scroll/-/better-scroll-1.15.1.tgz#cd390715704fe2d1654bba0778ddf0fd28015572"
-  integrity sha512-HL+jm6tk2pBylSZBfZLtfdwNhGckLbwiBAEx+Z2+8PrHJ6QAZp96txOVEFWSBgUAwPg5YSioMOxMqws5GdkXKA==
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/better-scroll/-/better-scroll-1.15.2.tgz#65ffc6058b8b4ff337b8dfad4bcb334d7699ceb6"
+  integrity sha512-sSY2N8I9/B+YX/9JpIz6pMQYnmBuvspBqZG4UxYaQEfz/ZWrnxwdyKLL4t6IKpFmxqtZadVypXw7vSSHxBZpBQ==
   dependencies:
     babel-runtime "^6.0.0"
 
@@ -7877,9 +7877,9 @@ vue-meta@^1.5.8:
     object-assign "^4.1.1"
 
 vue-router@^3.0.2:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.3.tgz#370ca607475c45a1cfab2d9d2ac846feab1c534c"
-  integrity sha512-62rB6GjJuyklnLL+yKST469yCYj93SXEn8rpYjxgLwv0aH/Fd6OApD8Hgi9RlraZ1OOwv3jPQvZTtf1GixYW+g==
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.5.tgz#24636923c7f1a62da3a577cf75a058f9fa328581"
+  integrity sha512-DGU+7+eeiSq/oNZ6epA/rcNkAd0m2+uugR5i4Eh4KBvclUmorvNJ6iForYjQkgvKi9GdamybaMpl85eDgxM2eQ==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
