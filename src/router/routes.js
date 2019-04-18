@@ -93,6 +93,7 @@ export default [
     name: 'login',
     meta: {
       title: '请登录',
+      NonMenu: true,
       layout: 'layoutShowcaseBlank'
     },
     component: showcaseLogin
