@@ -1,6 +1,6 @@
 {
   "name": "admincraft-showcase",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": false,
   "author": "mqhe2007 <122274389@qq.com>",
   "homepage": "https://mengqinghe.com",
@@ -28,7 +28,7 @@
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
-    "admincraft": "^0.5.7-alpha",
+    "admincraft": "^0.6.2-alpha",
     "admincraft-ui": "^0.1.13-alpha",
     "babel-eslint": "^10.0.1",
     "copy-webpack-plugin": "^5.0.0",

@@ -1212,10 +1212,10 @@ admincraft@^0.5.6-alpha:
     vue-router "^3.0.2"
     vuex "^3.1.0"
 
-admincraft@^0.5.7-alpha:
-  version "0.5.7-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.7-alpha.tgz#9fa73771f25bdab7b421a5855cd498cd4fb9631b"
-  integrity sha512-ebZmjzIJAde28druut5tlMxVe9M/PdJhnXOnKqMlcjK7ULOrMAtrXHZuyULTlkc4jIaYEhqMiOSwGvPnRnKlkw==
+admincraft@^0.6.2-alpha:
+  version "0.6.2-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.6.2-alpha.tgz#3ae2814bba3cd3510fb86919749874369672c7f5"
+  integrity sha512-6R3BmCECx8S52q1OKan/EV8QtuDIP2XlDXRc4Fy+Gko2OuWV8aWMkz4vlnLHVhay9bqvJtaeV1Z4wl2Kastp1Q==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     axios "^0.18.0"

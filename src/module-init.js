@@ -1,17 +1,19 @@
 import routes from './router/routes'
 import storeModule from './store/storeModule'
+import layoutShowcaseBlank from './layout/showcaseBlank.vue'
 import 'prismjs'
 import 'prismjs/themes/prism.css'
 let moduleName = require('../package.json').name
-export default app => {
+export default ({Vue}) => {
+  Vue.prototype.$addLayout({ layoutShowcaseBlank })
   // 注册路由
-  app.$addRoutes(routes, () => {})
+  Vue.prototype.$addRoutes(routes, () => {})
 
   // 注册状态树
-  app.$addStore(moduleName, storeModule, () => {})
+  Vue.prototype.$addStore(moduleName, storeModule, () => {})
 
   // 注册菜单
-  app.$addMenus(routes, () => {})
+  Vue.prototype.$addMenus(routes, () => {})
 
   console.log(
     `%c${moduleName}模块加载完成`,
