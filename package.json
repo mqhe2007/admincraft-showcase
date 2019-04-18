@@ -29,7 +29,7 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "admincraft": "^0.6.2-alpha",
-    "admincraft-ui": "^0.1.13-alpha",
+    "admincraft-ui": "^0.1.14-alpha",
     "babel-eslint": "^10.0.1",
     "copy-webpack-plugin": "^5.0.0",
     "eslint": "^5.8.0",
