@@ -87,15 +87,5 @@ export default [
         }
       }
     ]
-  },
-  {
-    path: '/login',
-    name: 'login',
-    meta: {
-      title: '请登录',
-      NonMenu: true,
-      layout: 'layoutShowcaseBlank'
-    },
-    component: showcaseLogin
   }
 ]
