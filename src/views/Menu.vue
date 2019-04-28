@@ -95,31 +95,35 @@ export default {
       ])
     },
     addMenuGroup() {
-      // 通过菜单构造对象来注册
+      // 通过菜单构造对象来添加菜单
       this.$addMenus([
         {
-          index: 4,
-          title: '导航工具',
-          name: 'daohang',
-          icon: 'setting',
+          index: 0,
+          title: '租户管理',
+          name: 'ZHGL',
           children: [
             {
               index: 0,
-              title: 'iconfont',
-              name: 'iconfont',
-              url: 'https://www.iconfont.cn/', // 站外url
-              icon: 'setting',
-              children: []
+              title: '技能组管理',
+              name: 'ZHUGL_JNZGL'
             },
             {
-              index: 0,
-              title: '每日灵感',
-              name: 'meirilinggan',
-              url: 'https://uiiiuiii.com/inspiration', // 站外url
-              icon: 'setting',
-              children: []
+              index: 1,
+              title: '套餐管理',
+              name: 'ZHUGL_TCGL'
+            },
+            {
+              index: 2,
+              title: '站外导航',
+              url: 'http://www.baidu.com'
             }
           ]
+        },
+        {
+          index: 3,
+          title: '角色管理',
+          name: 'ZHUGL_JSGL',
+          parents: 'ZHGL' // 任何一个菜单指定了父级就会去查找，行业应用限制左侧只有两级，所以这种用法意义不大了。
         }
       ])
     }

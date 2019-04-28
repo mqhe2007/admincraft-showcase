@@ -52,22 +52,9 @@ export default {
     list: [],
     permissionTag: ''
   }),
-  watch: {
-    '$store.state.user.permissions'(n) {
-      console.log(n)
-      this.$forceUpdate()
-    }
-  },
+  
   mounted() {
     Prism.highlightAll()
-  },
-  methods: {
-    add() {
-      this.list.push('新数据')
-    },
-    addPermissionTag() {
-      this.$store.commit('user/addUserPermissionTag', this.permissionTag)
-    }
   }
 }
 </script>

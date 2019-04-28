@@ -15,7 +15,7 @@ $('.desc').fadeToggle()
         </pre>
     </div>
     <div class="case">
-      <div class="title">本地库script标签引用</div>
+      <div class="title">本地库script标签引用（弃用）</div>
       <div class="desc">代码高亮库。</div>
       <pre>
           <code class="language-js">

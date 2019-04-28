@@ -11,7 +11,7 @@
             @click="addPermissionTag">添加</span>
       <pre>
           <code class="language-js">
-this.$store.commit('user/addUserPermissionTag', 'showcase_add')
+this.$store.commit('ui/user/addUserPermissionTag', 'showcase_add')
         </code>
         </pre>
     </div>
@@ -38,7 +38,7 @@ export default {
     permissionTag: ''
   }),
   watch: {
-    '$store.state.user.permissions'(n) {
+    '$store.state.ui.user.permissionTags'(n) {
       console.log(n)
       this.$forceUpdate()
     }
@@ -51,7 +51,7 @@ export default {
       this.list.push('新数据')
     },
     addPermissionTag() {
-      this.$store.commit('user/addUserPermissionTag', this.permissionTag)
+      this.$store.commit('ui/user/addUserPermissionTag', this.permissionTag)
     }
   }
 }

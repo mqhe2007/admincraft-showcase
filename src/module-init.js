@@ -4,10 +4,10 @@ import layoutShowcaseBlank from './layout/showcaseBlank.vue'
 import 'prismjs'
 import 'prismjs/themes/prism.css'
 let moduleName = require('../package.json').name
-export default ({Vue}) => {
+export default ({Vue, store}) => {
   Vue.prototype.$addLayout({ layoutShowcaseBlank })
   // 注册路由
-  Vue.prototype.$addRoutes(routes, () => {})
+  Vue.prototype.$addRoutes(routes, store.state.ui.user.permissionTags, () => {})
 
   // 注册状态树
   Vue.prototype.$addStore(moduleName, storeModule, () => {})

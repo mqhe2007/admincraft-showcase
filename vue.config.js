@@ -1,4 +1,3 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
   publicPath: './',
   productionSourceMap: false,
@@ -17,13 +16,6 @@ module.exports = {
   configureWebpack: {
     output: {
       libraryExport: 'default'
-    },
-    plugins: [
-      new CopyWebpackPlugin([
-        {
-          from: 'public'
-        }
-      ])
-    ]
+    }
   }
 }

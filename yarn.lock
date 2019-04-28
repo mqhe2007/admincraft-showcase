@@ -1188,34 +1188,20 @@ address@^1.0.3:
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
-admincraft-ui@^0.1.14-alpha:
-  version "0.1.14-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.1.14-alpha.tgz#3c7ef9ed1c8f8d8939e8a54d0ccfbfa3a4e4db09"
-  integrity sha512-KCHk9RfRzJcoRG5fsaxhOOp0hGU9b0DQHl+3SeUUUMAlDjlaxY9xLIP7PQXHkDcBJiWyVMaJDarxI0p5NDXV6w==
+admincraft-ui@^0.2.0-alpha:
+  version "0.2.0-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft-ui/-/admincraft-ui-0.2.0-alpha.tgz#75a19fd183217347347fbef2fba8f111f9fe4064"
+  integrity sha512-lyDc3eIlQs1N6VqMpU5ThfvhSukrSzbyHtYoCpyGG+8PDqOV8nJsnLnocS2VD6BT6ulZKrFKM1uA50Tdyw9okA==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     "@fortawesome/fontawesome-free-solid" "^5.0.13"
     "@fortawesome/fontawesome-svg-core" "^1.2.17"
     "@fortawesome/vue-fontawesome" "^0.1.6"
-    admincraft "^0.5.6-alpha"
 
-admincraft@^0.5.6-alpha:
-  version "0.5.6-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.5.6-alpha.tgz#21c089cf9f6c0faa3ddf56a171aa3b9d178a3e83"
-  integrity sha512-GOpbZBa0gkwP6sXESprUqZFQ/5yPLKacq27bzSNvld+fhPYlcToPsZo2eYUly3YnceNond7UMqMvUFEknYfbyQ==
-  dependencies:
-    "@babel/polyfill" "^7.4.3"
-    axios "^0.18.0"
-    better-scroll "^1.15.0"
-    vue "^2.6.9"
-    vue-meta "^1.5.8"
-    vue-router "^3.0.2"
-    vuex "^3.1.0"
-
-admincraft@^0.6.2-alpha:
-  version "0.6.2-alpha"
-  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.6.2-alpha.tgz#3ae2814bba3cd3510fb86919749874369672c7f5"
-  integrity sha512-6R3BmCECx8S52q1OKan/EV8QtuDIP2XlDXRc4Fy+Gko2OuWV8aWMkz4vlnLHVhay9bqvJtaeV1Z4wl2Kastp1Q==
+admincraft@^0.8.2-alpha:
+  version "0.8.2-alpha"
+  resolved "https://registry.yarnpkg.com/admincraft/-/admincraft-0.8.2-alpha.tgz#675d871febac45731003c106467805aea23419b7"
+  integrity sha512-+Y8u2APsO8PJy7/BoUeHfnrbNb6KnGFjzIslVNKOxeugvxWhVF+/DKQe4Nw9aGbtXcB611rpIxMLV4iP5zNIKQ==
   dependencies:
     "@babel/polyfill" "^7.4.3"
     axios "^0.18.0"
