@@ -5,9 +5,7 @@ import showcaseComponent from '../views/Component.vue'
 import showcaseHelp from '../views/Help.vue'
 import showcaseMenu from '../views/Menu.vue'
 import showcasePer from '../views/Permission.vue'
-import showcaseDep from '../views/Dependence.vue'
 import showcaseEnv from '../views/Env.vue'
-import showcaseLogin from '../views/Login.vue'
 let moduleName = require('../../package.json').name
 export default [
   {
@@ -68,14 +66,6 @@ export default [
         component: showcasePer,
         meta: {
           title: '权限控制'
-        }
-      },
-      {
-        path: 'dependence',
-        name: 'showcaseDep',
-        component: showcaseDep,
-        meta: {
-          title: '第三方库'
         }
       },
       {
